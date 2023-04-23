@@ -65,7 +65,10 @@ export class App extends Component {
           onFilterChange={this.handleFilterContacts}
           value={this.state.filter}
         />
-        <ContactList contacts={filterContacts} onDelete={this.deleteContact} />
+        <ContactList
+          contacts={filterContacts}
+          onButtonDelete={this.deleteContact}
+        />
       </div>
     );
   }
